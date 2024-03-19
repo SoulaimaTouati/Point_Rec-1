@@ -1,0 +1,26 @@
+<p>features works!</p>
+
+<div *ngIf="admins.length > 0">
+  <h1>Liste des administrateurs Plateforme </h1>
+  <ul>
+    <li *ngFor="let admin of admins">
+      {{ admin.nom }} {{ admin.prenom }} ({{ admin.numerotelephone }})
+    </li>
+  </ul>
+</div>
+<div *ngIf="admins.length === 0">
+  <p>Aucun administrateur Plateforme trouvé trouvé.</p>
+</div>
+
+
+<div *ngIf="adminsp.length > 0">
+  <h1>Liste des administrateurs Pointrelais </h1>
+  <ul>
+    <li *ngFor="let a of adminsp">
+      {{ a.nom }} {{ a.prenom }} ({{ a.numerotelephone }})
+    </li>
+  </ul>
+</div>
+<div *ngIf="adminsp.length === 0">
+  <p>Aucun administrateur Pointrelais  trouvé.</p>
+</div>
