@@ -9,7 +9,7 @@ import { AdminPointrelais } from '../features/admin-pointrelais.model';
 })
 export class AuthentificationService {
 
-  private adminplateforme = 'http://localhost:3000/authentification/adminplateforme'; // URL de monAPI
+  private adminplateforme = 'http://localhost:3000/authentification/adminplateforme';  // URL de monAPI
   
   private adminpointrelais = 'http://localhost:3000/authentification/adminpointrelais'; // URL de monAPI
 
